@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test.CustomerStakeAdmin.Sprint1.PANP20895" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-10-04T23:09:02" hostname="VICMELBLP99" time="67.082">
+  <properties/>
+  <testcase name="createAndSearchNewIndividualUser" classname="Test.CustomerStakeAdmin.Sprint1.PANP20895" time="67.082"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8) on port 49022
+Only local connections are allowed.
+Oct 05, 2017 10:09:04 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+</testsuite>

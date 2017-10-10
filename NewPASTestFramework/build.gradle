@@ -1,0 +1,52 @@
+group 'com.planittesting'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.4.0'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+tasks.withType(Test) {
+    maxParallelForks = 12
+}
+
+// you can run: gradle test -D[anyArg]=[anyValue]
+task testSeleniumGrid(type: Test) {
+    systemProperty "driver", "grid"
+    //noinspection GroovyAssignabilityCheck
+    jvmArgs project.gradle.startParameter.systemPropertiesArgs.entrySet().collect { "-D${it.key}=${it.value}" }
+    filter.includeTestsMatching "*PANP20897"
+
+}
+task testChrome(type: Test) {
+    systemProperty "driver", "chrome"
+    //noinspection GroovyAssignabilityCheck
+    jvmArgs project.gradle.startParameter.systemPropertiesArgs.entrySet().collect { "-D${it.key}=${it.value}" }
+    filter.includeTestsMatching "*Test"
+}
+
+task testRegression(type: Test) {
+    systemProperty "driver", "chrome"
+    //noinspection GroovyAssignabilityCheck
+    jvmArgs project.gradle.startParameter.systemPropertiesArgs.entrySet().collect { "-D${it.key}=${it.value}" }
+    useJUnit {
+        includeCategories 'Test.RegressionTests'
+    }
+
+}
+task testRegressionGrid(type: Test) {
+    systemProperty "driver", "grid"
+    //noinspection GroovyAssignabilityCheck
+    jvmArgs project.gradle.startParameter.systemPropertiesArgs.entrySet().collect { "-D${it.key}=${it.value}" }
+    useJUnit {
+        includeCategories 'Test.RegressionTests'
+    }
+
+}

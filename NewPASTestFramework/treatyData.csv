@@ -1,0 +1,3 @@
+rule,treatyType,treatyReferenceNumber,treatyCommencementDate,treatyBasis,treatyContactLevel,reinsurancePaymentFrequency,searchType,party,partyTypeID,customerType,nameOfBusiness/reassurerName,companyIdentifier,sanctionedEntity,dateOfLastSanctionsScreening,levelType,treatyLimit,underwritingLimit,reassurerSplit,retentionLimitValue,upperRetentionLimit,lowerRetentionLimit
+TRUE,Surplus,abcde1232,01/01/2017,Policy,Reassurer,Monthly,Party,C100070004,Individual,Business,Name Of Business3,MLC-Group,Yes,01/01/2017,Benefit,10000,20000,50,1000,30000,5000
+TRUE,Surplus,abcde1233,01/01/2018,Policy,Reassurer,Monthly,Party,C100070004,Individual,Business,Name Of Business4,MLC-Group,Yes,01/01/2018,Benefit,10000,20000,50,1000,30000,5000

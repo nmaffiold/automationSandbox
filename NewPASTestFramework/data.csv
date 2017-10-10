@@ -1,0 +1,4 @@
+searchType,partyTypeID,Party,scheme,collectOn,collectOnDate,startDate,expiryDate,subType,collectionFrequency,currency,,,,,,,,,
+Party,Individual,C100046011,G3841,Specific Day,31,01/01/3000,01/01/3000,Any,Monthly,Australian Dollar,,,,,,,,,
+Party,Individual,C100046011,G3841,Specific Day,31,01/01/3000,01/01/3000,Any,Monthly,Australian Dollar,,,,,,,,,
+Party,Individual,C100046011,G3841,Specific Day,31,01/01/3000,01/01/3000,Any,Monthly,Australian Dollar,,,,,,,,,
